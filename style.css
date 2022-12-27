@@ -69,7 +69,10 @@ a {
   color: white;
   display: block;
 }
-
+.btn-xl{
+  width: 200px;
+  height: 65px;
+}
 /* Header */
 .header {
   background: linear-gradient(0deg, #e5fdfc, #e5fdfc);
@@ -170,14 +173,15 @@ a {
 .img_content {
   flex: 1;
   display: flex;
+  position:relative;
   justify-content: center;
-  position: relative;
 }
 .batch {
-  position: absolute;
-  top: 50%;
-  right: 100px;
+  position:absolute;
+
   transition: all 0.4s ease;
+  right:50px;
+  bottom:150px;
 }
 .batch:hover {
   transform: scale(1.4) rotateZ(360deg);
@@ -228,3 +232,45 @@ a {
   right: 7px;
   top: 5px;
 }
+.learn_more_btn{
+  display: flex;
+}
+.learn_more_btn .wrapper{
+  display: flex;
+}
+
+.circle_image_client{
+  margin-right: 20px;;
+  padding: 0;
+  position: relative;
+  align-self: center;
+}
+.circle_image_client img:nth-child(1){
+  position: relative;
+  right: -40px;
+  z-index: 1;
+}
+.circle_image_client img:nth-child(2){
+  position: relative;
+  right: -20px;
+}
+.customer_number{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 42px;
+letter-spacing: -1px;
+color: #242424;
+margin-bottom: -10px;
+}
+.sm_light_text{
+font-family: 'poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+opacity: 0.6;
+}
+
