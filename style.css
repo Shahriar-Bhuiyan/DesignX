@@ -25,7 +25,7 @@ section:not(:last-child) {
   color: #fff !important;
 }
 .bg_white {
-  background-color: aliceblue;
+  background-color: rgb(224, 140, 6);
 }
 .bg_blue {
   background-color: #1353d9;
@@ -41,7 +41,7 @@ section:not(:last-child) {
   padding-right: 30px;
 }
 .container {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 .pb_n {
@@ -199,10 +199,12 @@ a {
 }
 .batch {
   position: absolute;
-
   transition: all 0.4s ease;
   right: 50px;
   bottom: 150px;
+}
+.batch >img {
+  position: relative;
 }
 .batch:hover {
   transform: scale(1.4) rotateZ(360deg);
