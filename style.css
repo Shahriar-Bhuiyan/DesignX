@@ -200,8 +200,12 @@ a {
 .batch {
   position: absolute;
   transition: all 0.4s ease;
-  right: 50px;
-  bottom: 150px;
+  right: 20%;
+  bottom: 30%;
+  overflow: hidden;
+  z-index: 999;
+  height: 120px;
+  overflow: hidden;
 }
 .batch >img {
   position: relative;
