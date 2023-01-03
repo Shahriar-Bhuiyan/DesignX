@@ -41,7 +41,7 @@ section:not(:last-child) {
   padding-right: 30px;
 }
 .container {
-  width: 80%;
+  width: 1080px;
   margin: 0 auto;
 }
 .pb_n {
@@ -189,7 +189,7 @@ a {
 }
 .button_wrapper button {
   width: 221px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .img_content {
   flex: 1;
