@@ -416,3 +416,63 @@ color: #FFFFFF;
 margin: 0 auto;
 border-radius:16px;
 }
+.working_card_container{
+  display: flex;
+  justify-content: space-between;
+}
+.work_card{
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border-radius: 160px 160px 140px 140px;
+  border: 1px solid #1353D9;
+  box-shadow: 8px 18px 30px rgba(19, 83, 217, 0.2);
+  height: 584px;
+}
+.work_img{
+  position: relative;
+  bottom: 40px;
+}
+.work_content {
+  position: absoulte;
+  height: 50%;
+  background: #fff;
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  padding-top: 35px;
+}
+.work_count{
+font-weight: 600;
+font-size: 38px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #1353D9;
+border-radius: 50px;
+border: 1px solid #1353D9;
+padding: 0px 20px;
+}
+.work_desc{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 44px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+color: #1353D9;
+padding: 0px 20px;
+margin-top:24px;
+}
