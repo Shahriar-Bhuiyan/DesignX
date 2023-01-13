@@ -207,7 +207,7 @@ a {
   height: 120px;
   overflow: hidden;
 }
-.batch >img {
+.batch > img {
   position: relative;
 }
 .batch:hover {
@@ -370,7 +370,7 @@ a {
   align-items: center;
   color: blue;
 }
-.card_read_more:nth-child(2){
+.card_read_more:nth-child(2) {
   color: #fff;
 }
 .card_read_more a {
@@ -401,26 +401,35 @@ a {
 }
 
 /* Working_process_title */
-.working_small_title{
-width: 226px;
-height: 27px;
-background-color: #1353D9;
-font-family: 'Poppins';
-font-style: normal;
-font-weight:400;
-font-size: 16px;
-line-height: 151.5%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin: 0 auto;
-border-radius:16px;
+.working_small_title {
+  width: 226px;
+  height: 27px;
+  background-color: #1353d9;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 151.5%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  border-radius: 16px;
 }
-.working_card_container{
+
+.working_card_container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
-.work_card{
+.working_card_container::after{
+  content: url('./assets/arrowmarkworking.png');
+  position: absolute;
+  right: 35%;
+
+}
+
+.work_card {
   width: 320px;
   overflow: hidden;
   display: flex;
@@ -430,13 +439,23 @@ border-radius:16px;
   text-align: center;
   position: relative;
   border-radius: 160px 160px 140px 140px;
-  border: 1px solid #1353D9;
+  border: 1px solid #1353d9;
   box-shadow: 8px 18px 30px rgba(19, 83, 217, 0.2);
   height: 584px;
 }
-.work_img{
+.work_card:nth-child(2){
+  border: none;
+  margin-top: 140px;
+  position: relative;
+}
+
+.work_img {
   position: relative;
   bottom: 40px;
+}
+.work_content.blue {
+  background-color: #1353d9;
+  color: #fff;
 }
 .work_content {
   position: absoulte;
@@ -452,27 +471,26 @@ border-radius:16px;
   height: 100%;
   top: 50%;
   padding-top: 35px;
+  color: #1353d9;
 }
-.work_count{
-font-weight: 600;
-font-size: 38px;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #1353D9;
-border-radius: 50px;
-border: 1px solid #1353D9;
-padding: 0px 20px;
+.work_count {
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 1px solid #1353d9;
+  padding: 0px 20px;
 }
-.work_desc{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 44px;
-text-align: center;
-letter-spacing: 0.05em;
-text-transform: capitalize;
-color: #1353D9;
-padding: 0px 20px;
-margin-top:24px;
+.work_desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  padding: 0px 20px;
+  margin-top: 24px;
 }
